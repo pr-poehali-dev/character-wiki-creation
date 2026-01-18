@@ -160,7 +160,7 @@ function HomeSection() {
               >
                 <div className="w-20 h-20 rounded-2xl overflow-hidden ring-2 ring-cyan-200 group-hover:ring-cyan-400 transition-all">
                   <img 
-                    src="https://cdn.poehali.dev/files/Без%20названия2265_20251217194141.png" 
+                    src="https://cdn.poehali.dev/files/photo_5433670810049645977_x.jpg" 
                     alt="Уэйн Моретти (Чайка)"
                     className="w-full h-full object-cover"
                   />
