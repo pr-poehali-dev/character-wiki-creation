@@ -93,10 +93,35 @@ function HomeSection() {
       <div className="mt-12">
         <h2 className="text-3xl font-bold font-display mb-6 text-center">Персонажи</h2>
         <Card className="rounded-2xl border-2 shadow-sm">
-          <CardContent className="p-12">
-            <div className="text-center text-muted-foreground">
-              <Icon name="Users" size={48} className="mx-auto mb-4 opacity-30" />
-              <p className="text-lg">Список персонажей появится здесь...</p>
+          <CardContent className="p-8">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+              <a 
+                href="/characters" 
+                className="flex flex-col items-center gap-3 p-4 rounded-2xl hover:bg-orange-50 transition-colors group"
+              >
+                <div className="w-20 h-20 rounded-2xl overflow-hidden ring-2 ring-orange-200 group-hover:ring-orange-400 transition-all">
+                  <img 
+                    src="https://cdn.poehali.dev/files/Без%20названия1909_20250730204030.png" 
+                    alt="Лила Невес"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-center font-medium">Лила Невес</p>
+              </a>
+              
+              <a 
+                href="/characters" 
+                className="flex flex-col items-center gap-3 p-4 rounded-2xl hover:bg-purple-50 transition-colors group"
+              >
+                <div className="w-20 h-20 rounded-2xl overflow-hidden ring-2 ring-purple-200 group-hover:ring-purple-400 transition-all">
+                  <img 
+                    src="https://cdn.poehali.dev/files/Без%20названия2265_20251217193536.png" 
+                    alt="Лана Солис"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-center font-medium">Лана Солис</p>
+              </a>
             </div>
           </CardContent>
         </Card>
