@@ -23,7 +23,8 @@ export default function Setting() {
             rel="noopener noreferrer"
             className="block bg-card rounded-2xl border-2 border-border shadow-sm hover:shadow-md hover:border-primary/50 transition-all p-6"
           >
-            <p className="text-2xl font-display text-center">А вот и Эстас де Луна! Чудный островок, где живут ребята :3</p>
+            <p className="text-2xl font-display text-center">А вот и Эстас де Луна! Чудный островок, где живут ребята :3
+(   . . . кликабельно . . .   )</p>
           </a>
           
           <div className="bg-card rounded-3xl border-2 border-border shadow-lg overflow-hidden">
