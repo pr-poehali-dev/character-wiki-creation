@@ -118,7 +118,7 @@ function HomeSection() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <p className="text-center font-medium">Лана Солис</p>
+                <p className="text-center font-medium">Лана</p>
               </a>
               
               <a 
