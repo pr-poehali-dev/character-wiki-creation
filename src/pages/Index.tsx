@@ -123,18 +123,28 @@ function CharactersSection() {
 }
 
 function Bubbles() {
+  const bubbles = [...Array(20)].map((_, i) => ({
+    id: i,
+    size: Math.random() * 60 + 20,
+    left: Math.random() * 100,
+    top: Math.random() * 100,
+    duration: Math.random() * 6 + 6,
+    delay: Math.random() * 8,
+  }));
+
   return (
     <div className="fixed inset-0 pointer-events-none z-0">
-      {[...Array(15)].map((_, i) => (
+      {bubbles.map((bubble) => (
         <div
-          key={i}
-          className="absolute rounded-full bg-primary/10 backdrop-blur-sm"
+          key={bubble.id}
+          className="absolute rounded-full bg-primary/10 backdrop-blur-sm border border-primary/20"
           style={{
-            width: `${Math.random() * 60 + 20}px`,
-            height: `${Math.random() * 60 + 20}px`,
-            left: `${Math.random() * 100}%`,
-            animation: `bubble-float ${Math.random() * 6 + 6}s ease-in-out infinite`,
-            animationDelay: `${Math.random() * 8}s`,
+            width: `${bubble.size}px`,
+            height: `${bubble.size}px`,
+            left: `${bubble.left}%`,
+            top: `${bubble.top}%`,
+            animation: `bubble-float ${bubble.duration}s ease-in-out infinite`,
+            animationDelay: `${bubble.delay}s`,
           }}
         />
       ))}
