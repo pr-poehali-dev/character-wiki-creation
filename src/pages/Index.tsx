@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
+import { useTheme } from '@/hooks/useTheme';
 
 type Section = 'home' | 'characters' | 'setting';
 
 export default function Index() {
   const [activeSection, setActiveSection] = useState<Section>('home');
+  const { theme, toggleTheme } = useTheme();
 
   const navItems = [
     { id: 'home' as Section, label: 'Главная', icon: 'Home', link: null },
@@ -20,9 +22,13 @@ export default function Index() {
         <WavePattern />
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <div className="p-2 bg-primary/10 rounded-2xl">
-              <Icon name="Sun" size={28} className="text-primary" />
-            </div>
+            <button 
+              onClick={toggleTheme}
+              className="p-2 bg-primary/10 rounded-2xl hover:scale-105 transition-transform"
+              aria-label="Переключить тему"
+            >
+              <Icon name={theme === 'light' ? 'Sun' : 'Moon'} size={28} className="text-primary" />
+            </button>
             <div className="flex gap-1">
               {navItems.map((item) => 
                 item.link ? (

@@ -1,6 +1,9 @@
 import Icon from '@/components/ui/icon';
+import { useTheme } from '@/hooks/useTheme';
 
 export default function Setting() {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-primary/20">
       <nav className="sticky top-0 z-50 border-b border-border bg-card/80 backdrop-blur-lg">
@@ -10,7 +13,13 @@ export default function Setting() {
               <Icon name="Home" size={28} className="text-primary" />
             </a>
             <h1 className="text-2xl font-bold font-display">Сеттинг</h1>
-            <div className="w-[44px]"></div>
+            <button 
+              onClick={toggleTheme}
+              className="p-2 bg-primary/10 rounded-2xl hover:scale-105 transition-transform"
+              aria-label="Переключить тему"
+            >
+              <Icon name={theme === 'light' ? 'Sun' : 'Moon'} size={28} className="text-primary" />
+            </button>
           </div>
         </div>
       </nav>
