@@ -16,7 +16,11 @@ export default function Setting() {
       </nav>
 
       <main className="container mx-auto px-4 py-12 relative z-10">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto space-y-6">
+          <div className="text-center">
+            <p className="text-2xl font-display">А вот и Эстас де Луна! Чудный островок, где живут ребята :3</p>
+          </div>
+          
           <div className="bg-card rounded-3xl border-2 border-border shadow-lg overflow-hidden">
             <img 
               src="https://cdn.poehali.dev/files/5368444589129273226.jpg" 
