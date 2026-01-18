@@ -15,10 +15,10 @@ const characters = [
         title: 'Информация',
         content: (
           <div className="space-y-3">
-            <h3 className="text-3xl font-bold font-display">Лила Невес</h3>
-            <p className="text-lg opacity-90">23 года, рост: 175 см</p>
-            <p className="text-lg opacity-90">День рождения: 01.06</p>
-            <p className="text-lg leading-relaxed mt-4">
+            <h3 className="text-3xl font-bold font-display text-slate-600">Лила Невес</h3>
+            <p className="text-lg opacity-90 text-slate-600">23 года, рост: 175 см</p>
+            <p className="text-lg opacity-90 text-slate-600">День рождения: 01.06</p>
+            <p className="text-lg leading-relaxed mt-4 text-slate-600">
               Лила Невес – жизнерадостная и активная девушка! Работает спасателем на пляже, часто заводит новых друзей.
             </p>
           </div>
@@ -76,10 +76,10 @@ const characters = [
         title: 'Информация',
         content: (
           <div className="space-y-3">
-            <h3 className="text-3xl font-bold font-display">Лана Солис</h3>
-            <p className="text-lg opacity-90">25 лет, рост: 180 см</p>
-            <p className="text-lg opacity-90">День рождения: 14.02</p>
-            <p className="text-lg leading-relaxed mt-4">
+            <h3 className="text-3xl font-bold font-display text-slate-600">Лана Солис</h3>
+            <p className="text-lg opacity-90 text-slate-600">25 лет, рост: 180 см</p>
+            <p className="text-lg opacity-90 text-slate-600">День рождения: 14.02</p>
+            <p className="text-lg leading-relaxed mt-4 text-slate-600">
               Лана Солис – спокойная, расслабленная и, хоть может показаться равнодушной, искренне добрая девушка. Работает в зале игровых автоматов, предпочитает тихий отдых.
             </p>
           </div>
@@ -137,10 +137,10 @@ const characters = [
         title: 'Информация',
         content: (
           <div className="space-y-3">
-            <h3 className="text-3xl font-bold font-display">Уэйн Моретти (прозвище Чайка)</h3>
-            <p className="text-lg opacity-90">24 года, рост: 193 см</p>
-            <p className="text-lg opacity-90">День рождения: 01.04</p>
-            <p className="text-lg leading-relaxed mt-4">
+            <h3 className="text-3xl font-bold font-display text-slate-600">Уэйн Моретти (прозвище Чайка)</h3>
+            <p className="text-lg opacity-90 text-slate-600">24 года, рост: 193 см</p>
+            <p className="text-lg opacity-90 text-slate-600">День рождения: 01.04</p>
+            <p className="text-lg leading-relaxed mt-4 text-slate-600">
               Импульсивный, харизматичный и находчивый экстраверт без тормозов. Он найдет общий язык даже с мертвым, заболтает зубы королевской гвардии, переубедит полицию арестовывать его, успеет подружиться с бабкой в очереди и поможет туристу пройти, куда ему надо, не зная языка.
             </p>
           </div>
@@ -198,10 +198,10 @@ const characters = [
         title: 'Информация',
         content: (
           <div className="space-y-3">
-            <h3 className="text-3xl font-bold font-display">Кэп Невес</h3>
-            <p className="text-lg opacity-90">30 лет, рост: 210 см</p>
-            <p className="text-lg opacity-90">День рождения: 29.02</p>
-            <p className="text-lg leading-relaxed mt-4">
+            <h3 className="text-3xl font-bold font-display text-slate-600">Кэп Невес</h3>
+            <p className="text-lg opacity-90 text-slate-600">30 лет, рост: 210 см</p>
+            <p className="text-lg opacity-90 text-slate-600">День рождения: 29.02</p>
+            <p className="text-lg leading-relaxed mt-4 text-slate-600">
               С виду холодный, отстранённый и угрюмый мужчина, но на деле добрый и очень сильно застенчивый, из-за чего не любит показывать свои чувства другим. Работает муниципальным полицейским, благодаря сестре, иначе бы ничего не делал.
             </p>
           </div>
