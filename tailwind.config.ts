@@ -98,10 +98,11 @@ export default {
 					'100%': { transform: 'translateX(0)', opacity: '1' }
 				},
 				'bubble-float': {
-					'0%': { transform: 'translateY(100vh) scale(0)', opacity: '0' },
-					'10%': { opacity: '0.6' },
-					'90%': { opacity: '0.6' },
-					'100%': { transform: 'translateY(-100vh) scale(1)', opacity: '0' }
+					'0%': { transform: 'translateY(0) translateX(0)', opacity: '0.4' },
+					'25%': { transform: 'translateY(-25vh) translateX(10px)', opacity: '0.6' },
+					'50%': { transform: 'translateY(-50vh) translateX(-10px)', opacity: '0.5' },
+					'75%': { transform: 'translateY(-75vh) translateX(15px)', opacity: '0.6' },
+					'100%': { transform: 'translateY(-100vh) translateX(0)', opacity: '0' }
 				},
 				'wave': {
 					'0%, 100%': { transform: 'translateX(0)' },

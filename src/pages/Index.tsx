@@ -14,7 +14,7 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-primary/20 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-background to-primary/20 relative">
       <Bubbles />
       <nav className="sticky top-0 z-50 border-b border-border bg-card/80 backdrop-blur-lg relative overflow-hidden">
         <WavePattern />
@@ -43,7 +43,7 @@ export default function Index() {
         </div>
       </nav>
 
-      <main className="container mx-auto px-4 py-12">
+      <main className="container mx-auto px-4 py-12 relative z-10">
         <div className="animate-fade-in">
           {activeSection === 'home' && <HomeSection />}
           {activeSection === 'characters' && <CharactersSection />}
@@ -127,22 +127,21 @@ function Bubbles() {
     id: i,
     size: Math.random() * 60 + 20,
     left: Math.random() * 100,
-    top: Math.random() * 100,
-    duration: Math.random() * 6 + 6,
-    delay: Math.random() * 8,
+    duration: Math.random() * 6 + 8,
+    delay: Math.random() * 10,
   }));
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-0">
+    <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
       {bubbles.map((bubble) => (
         <div
           key={bubble.id}
-          className="absolute rounded-full bg-primary/10 backdrop-blur-sm border border-primary/20"
+          className="absolute rounded-full bg-primary/8 backdrop-blur-sm border border-primary/15"
           style={{
             width: `${bubble.size}px`,
             height: `${bubble.size}px`,
             left: `${bubble.left}%`,
-            top: `${bubble.top}%`,
+            bottom: '0',
             animation: `bubble-float ${bubble.duration}s ease-in-out infinite`,
             animationDelay: `${bubble.delay}s`,
           }}
