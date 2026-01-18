@@ -14,7 +14,7 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-background relative">
+    <div className="min-h-screen bg-gradient-to-b from-background to-primary/20 relative">
       <nav className="sticky top-0 z-50 border-b border-border bg-card/80 backdrop-blur-lg">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
@@ -41,21 +41,13 @@ export default function Index() {
         </div>
       </nav>
 
-      <main className="container mx-auto px-4 py-12 pb-32">
+      <main className="container mx-auto px-4 py-12">
         <div className="animate-fade-in">
           {activeSection === 'home' && <HomeSection />}
           {activeSection === 'characters' && <CharactersSection />}
           {activeSection === 'setting' && <SettingSection />}
         </div>
       </main>
-      
-      <div className="fixed bottom-0 left-0 right-0 h-64 pointer-events-none z-10">
-        <img 
-          src="https://cdn.poehali.dev/projects/a95dcc19-ba5f-4bb6-b3fd-6a0f86575e5f/files/9f13e2d5-f11c-453d-9993-2b8e66e047fb.jpg" 
-          alt="" 
-          className="w-full h-full object-cover object-bottom"
-        />
-      </div>
     </div>
   );
 }
