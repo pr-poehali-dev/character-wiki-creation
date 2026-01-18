@@ -14,8 +14,10 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-primary/20 relative">
-      <nav className="sticky top-0 z-50 border-b border-border bg-card/80 backdrop-blur-lg">
+    <div className="min-h-screen bg-gradient-to-b from-background to-primary/20 relative overflow-hidden">
+      <Bubbles />
+      <nav className="sticky top-0 z-50 border-b border-border bg-card/80 backdrop-blur-lg relative overflow-hidden">
+        <WavePattern />
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <div className="p-2 bg-primary/10 rounded-2xl">
@@ -116,6 +118,44 @@ function CharactersSection() {
           </div>
         </CardContent>
       </Card>
+    </div>
+  );
+}
+
+function Bubbles() {
+  return (
+    <div className="fixed inset-0 pointer-events-none z-0">
+      {[...Array(15)].map((_, i) => (
+        <div
+          key={i}
+          className="absolute rounded-full bg-primary/10 backdrop-blur-sm"
+          style={{
+            width: `${Math.random() * 60 + 20}px`,
+            height: `${Math.random() * 60 + 20}px`,
+            left: `${Math.random() * 100}%`,
+            animation: `bubble-float ${Math.random() * 6 + 6}s ease-in-out infinite`,
+            animationDelay: `${Math.random() * 8}s`,
+          }}
+        />
+      ))}
+    </div>
+  );
+}
+
+function WavePattern() {
+  return (
+    <div className="absolute bottom-0 left-0 right-0 h-8 opacity-20 overflow-hidden">
+      <svg
+        className="absolute bottom-0 w-[200%] h-full animate-wave"
+        viewBox="0 0 1200 20"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M0,10 Q300,0 600,10 T1200,10 L1200,20 L0,20 Z"
+          fill="currentColor"
+          className="text-primary"
+        />
+      </svg>
     </div>
   );
 }
