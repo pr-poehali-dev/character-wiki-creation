@@ -122,6 +122,34 @@ function HomeSection() {
                 </div>
                 <p className="text-center font-medium">Лана Солис</p>
               </a>
+              
+              <a 
+                href="/characters" 
+                className="flex flex-col items-center gap-3 p-4 rounded-2xl hover:bg-cyan-50 transition-colors group"
+              >
+                <div className="w-20 h-20 rounded-2xl overflow-hidden ring-2 ring-cyan-200 group-hover:ring-cyan-400 transition-all">
+                  <img 
+                    src="https://cdn.poehali.dev/files/Без%20названия2265_20251217194141.png" 
+                    alt="Уэйн Моретти (Чайка)"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-center font-medium">Чайка</p>
+              </a>
+              
+              <a 
+                href="/characters" 
+                className="flex flex-col items-center gap-3 p-4 rounded-2xl hover:bg-red-50 transition-colors group"
+              >
+                <div className="w-20 h-20 rounded-2xl overflow-hidden ring-2 ring-red-200 group-hover:ring-red-400 transition-all">
+                  <img 
+                    src="https://cdn.poehali.dev/files/Без%20названия2265_20251217194856.png" 
+                    alt="Кэп Невес"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-center font-medium">Кэп Невес</p>
+              </a>
             </div>
           </CardContent>
         </Card>
@@ -133,7 +161,12 @@ function HomeSection() {
 function CharactersSection() {
   return (
     <div className="max-w-6xl mx-auto space-y-12">
-      <h2 className="text-4xl font-bold font-display mb-8 text-center">Персонажи</h2>
+      <div className="text-center mb-8">
+        <h2 className="text-4xl font-bold font-display mb-4">Персонажи</h2>
+        <p className="text-lg text-muted-foreground">
+          Откройте раздел через навигацию для полных биографий ⬆️
+        </p>
+      </div>
       
       <Card className="rounded-3xl border-2 border-orange-200 bg-orange-50 shadow-lg hover:shadow-xl transition-all overflow-hidden">
         <CardContent className="p-0">
