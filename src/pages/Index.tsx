@@ -21,21 +21,21 @@ export default function Index() {
       <nav className="sticky top-0 z-50 border-b border-border bg-card/80 backdrop-blur-lg relative overflow-hidden">
         <WavePattern />
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center gap-3 h-16">
             <button 
               onClick={toggleTheme}
-              className="p-2 bg-primary/10 rounded-2xl hover:scale-105 transition-transform"
+              className="p-2 bg-primary/10 rounded-2xl hover:scale-105 transition-transform flex-shrink-0"
               aria-label="Переключить тему"
             >
               <Icon name={theme === 'light' ? 'Sun' : 'Moon'} size={28} className="text-primary" />
             </button>
-            <div className="flex gap-1">
+            <div className="flex gap-1 overflow-x-auto scrollbar-hide flex-1">
               {navItems.map((item) => 
                 item.link ? (
                   <a
                     key={item.id}
                     href={item.link}
-                    className="flex items-center gap-2 px-4 py-2 rounded-2xl transition-all duration-300 hover:bg-secondary text-foreground"
+                    className="flex items-center gap-2 px-4 py-2 rounded-2xl transition-all duration-300 hover:bg-secondary text-foreground whitespace-nowrap flex-shrink-0"
                   >
                     <Icon name={item.icon} size={18} />
                     <span className="font-medium">{item.label}</span>
@@ -44,7 +44,7 @@ export default function Index() {
                   <button
                     key={item.id}
                     onClick={() => setActiveSection(item.id)}
-                    className={`flex items-center gap-2 px-4 py-2 rounded-2xl transition-all duration-300 ${
+                    className={`flex items-center gap-2 px-4 py-2 rounded-2xl transition-all duration-300 whitespace-nowrap flex-shrink-0 ${
                       activeSection === item.id
                         ? 'bg-primary text-primary-foreground shadow-lg'
                         : 'hover:bg-secondary text-foreground'
