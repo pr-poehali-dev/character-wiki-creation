@@ -146,7 +146,7 @@ function HomeSection() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <p className="text-center font-medium">Кэп Невес</p>
+                <p className="text-center font-medium">Кэп</p>
               </a>
             </div>
           </CardContent>
