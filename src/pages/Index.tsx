@@ -162,8 +162,7 @@ function CharactersSection() {
       <div className="text-center mb-8">
         <h2 className="text-4xl font-bold font-display mb-4">Персонажи</h2>
         <p className="text-lg text-muted-foreground">
-          Откройте раздел через навигацию для полных биографий ⬆️
-        </p>
+......................................................................</p>
       </div>
       
       <Card className="rounded-3xl border-2 border-orange-200 bg-orange-50 shadow-lg hover:shadow-xl transition-all overflow-hidden">
