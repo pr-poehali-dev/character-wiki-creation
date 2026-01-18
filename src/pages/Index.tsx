@@ -82,9 +82,7 @@ function HomeSection() {
             </div>
             <div className="flex-1">
               <p className="text-lg font-medium text-destructive mb-2">ДИСКЛЕЙМЕР</p>
-              <p className="text-base leading-relaxed text-foreground">
-                Некоторые персонажи содержат шокирующие тематики, мы осуждаем и не одобряем их поведение.
-              </p>
+              <p className="text-base leading-relaxed text-foreground">Некоторые персонажи содержат неприятные темы, мы осуждаем и не одобряем их поведение.</p>
             </div>
           </div>
         </CardContent>
