@@ -45,17 +45,17 @@ const characters = [
         title: 'Предпочтения',
         content: (
           <div className="space-y-4">
-            <h3 className="text-3xl font-bold font-display">Предпочтения</h3>
+            <h3 className="text-3xl font-bold font-display text-gray-600">Предпочтения</h3>
             <div className="space-y-3">
               <div>
-                <p className="text-lg font-semibold mb-2">Любит:</p>
-                <p className="text-lg leading-relaxed opacity-90">
+                <p className="text-lg font-semibold mb-2 text-gray-600">Любит:</p>
+                <p className="text-lg leading-relaxed opacity-90 text-gray-600">
                   арбузы, фруктовый лёд, животных (особенно мартышек и собак), заводить новых друзей, проводить время с Ланой, Чайкой и братиком.
                 </p>
               </div>
               <div>
-                <p className="text-lg font-semibold mb-2">Не любит:</p>
-                <p className="text-lg leading-relaxed opacity-90">
+                <p className="text-lg font-semibold mb-2 text-gray-600">Не любит:</p>
+                <p className="text-lg leading-relaxed opacity-90 text-gray-600">
                   Виктора… И ещё когда братика обижают.
                 </p>
               </div>
@@ -106,17 +106,17 @@ const characters = [
         title: 'Предпочтения',
         content: (
           <div className="space-y-4">
-            <h3 className="text-3xl font-bold font-display">Предпочтения</h3>
+            <h3 className="text-3xl font-bold font-display text-gray-600">Предпочтения</h3>
             <div className="space-y-3">
               <div>
-                <p className="text-lg font-semibold mb-2">Любит:</p>
-                <p className="text-lg leading-relaxed opacity-90">
+                <p className="text-lg font-semibold mb-2 text-gray-600">Любит:</p>
+                <p className="text-lg leading-relaxed opacity-90 text-gray-600">
                   шоппинг, дорогую одежду, проводить время с Лилой, Чайкой и Кэпом, необычную еду, алкогольные коктейли, братика Кайла.
                 </p>
               </div>
               <div>
-                <p className="text-lg font-semibold mb-2">Не любит:</p>
-                <p className="text-lg leading-relaxed opacity-90">
+                <p className="text-lg font-semibold mb-2 text-gray-600">Не любит:</p>
+                <p className="text-lg leading-relaxed opacity-90 text-gray-600">
                   Виктора, когда Кайл тратит её деньги, бедность.
                 </p>
               </div>
@@ -167,17 +167,17 @@ const characters = [
         title: 'Предпочтения',
         content: (
           <div className="space-y-4">
-            <h3 className="text-3xl font-bold font-display">Предпочтения</h3>
+            <h3 className="text-3xl font-bold font-display text-gray-600">Предпочтения</h3>
             <div className="space-y-3">
               <div>
-                <p className="text-lg font-semibold mb-2">Любит:</p>
-                <p className="text-lg leading-relaxed opacity-90">
+                <p className="text-lg font-semibold mb-2 text-gray-600">Любит:</p>
+                <p className="text-lg leading-relaxed opacity-90 text-gray-600">
                   новые знакомства, лёгкие деньги, быть в центре внимания, когда его не заставляют что-то делать, арбузы, гавайские рубашки, вырисовывать узоры загаром, коктейли (как молочные так и алкогольные), дорогую еду.
                 </p>
               </div>
               <div>
-                <p className="text-lg font-semibold mb-2">Не любит:</p>
-                <p className="text-lg leading-relaxed opacity-90">
+                <p className="text-lg font-semibold mb-2 text-gray-600">Не любит:</p>
+                <p className="text-lg leading-relaxed opacity-90 text-gray-600">
                   учиться и работать, пиццу с ананасами, думать о будущем, когда его заставляют что-то делать, правила, запах сигарет, высокие цены на еду.
                 </p>
               </div>
@@ -234,17 +234,17 @@ const characters = [
         title: 'Предпочтения',
         content: (
           <div className="space-y-4">
-            <h3 className="text-3xl font-bold font-display">Предпочтения</h3>
+            <h3 className="text-3xl font-bold font-display text-gray-600">Предпочтения</h3>
             <div className="space-y-3">
               <div>
-                <p className="text-lg font-semibold mb-2">Любит:</p>
-                <p className="text-lg leading-relaxed opacity-90">
+                <p className="text-lg font-semibold mb-2 text-gray-600">Любит:</p>
+                <p className="text-lg leading-relaxed opacity-90 text-gray-600">
                   сладкое (особенно пончики), мягкие вещи, прохладу, Чайку, семью (кроме отца), на удивление иногда проводить время с Виктором, проводить время хоть с кем-то, инициативных людей, астрофизику, звёзды.
                 </p>
               </div>
               <div>
-                <p className="text-lg font-semibold mb-2">Не любит:</p>
-                <p className="text-lg leading-relaxed opacity-90">
+                <p className="text-lg font-semibold mb-2 text-gray-600">Не любит:</p>
+                <p className="text-lg leading-relaxed opacity-90 text-gray-600">
                   когда Виктор себя плохо ведёт, когда Виктор обращается к нему как к девушке, имя, которое ему дал Виктор, бриться, показывать чувства другим, показаться слабым, отца, религию.
                 </p>
               </div>
