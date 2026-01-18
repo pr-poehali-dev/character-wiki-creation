@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,33 +6,33 @@
 
 @layer base {
   :root {
-    --background: 250 100% 98%;
-    --foreground: 260 20% 15%;
+    --background: 195 60% 96%;
+    --foreground: 200 30% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 260 20% 15%;
+    --card-foreground: 200 30% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 260 20% 15%;
+    --popover-foreground: 200 30% 20%;
 
-    --primary: 258 90% 66%;
+    --primary: 195 80% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 250 30% 94%;
-    --secondary-foreground: 260 20% 15%;
+    --secondary: 195 40% 92%;
+    --secondary-foreground: 200 30% 20%;
 
-    --muted: 250 30% 94%;
-    --muted-foreground: 260 10% 50%;
+    --muted: 195 40% 92%;
+    --muted-foreground: 200 20% 45%;
 
-    --accent: 258 90% 66%;
+    --accent: 195 80% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 250 20% 90%;
-    --input: 250 20% 90%;
-    --ring: 258 90% 66%;
+    --border: 195 30% 88%;
+    --input: 195 30% 88%;
+    --ring: 195 80% 55%;
 
     --radius: 1rem;
 
@@ -108,6 +108,6 @@
   h4,
   h5,
   h6 {
-    font-family: "Merriweather", serif;
+    font-family: "Outfit", sans-serif;
   }
 }

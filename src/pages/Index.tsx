@@ -14,11 +14,13 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
       <nav className="sticky top-0 z-50 border-b border-border bg-card/80 backdrop-blur-lg">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <h1 className="text-2xl font-bold text-primary font-serif">Вики персонажей</h1>
+            <div className="p-2 bg-primary/10 rounded-2xl">
+              <Icon name="Sun" size={28} className="text-primary" />
+            </div>
             <div className="flex gap-1">
               {navItems.map((item) => (
                 <button
@@ -39,13 +41,21 @@ export default function Index() {
         </div>
       </nav>
 
-      <main className="container mx-auto px-4 py-12">
+      <main className="container mx-auto px-4 py-12 pb-32">
         <div className="animate-fade-in">
           {activeSection === 'home' && <HomeSection />}
           {activeSection === 'characters' && <CharactersSection />}
           {activeSection === 'setting' && <SettingSection />}
         </div>
       </main>
+      
+      <div className="fixed bottom-0 left-0 right-0 h-48 pointer-events-none overflow-hidden opacity-20">
+        <img 
+          src="https://cdn.poehali.dev/projects/a95dcc19-ba5f-4bb6-b3fd-6a0f86575e5f/files/25a61a6a-d5e5-4da9-bf9e-ec9972c877ee.jpg" 
+          alt="" 
+          className="w-full h-full object-cover object-bottom"
+        />
+      </div>
     </div>
   );
 }
@@ -87,7 +97,7 @@ function HomeSection() {
       </Card>
 
       <div className="mt-12">
-        <h2 className="text-3xl font-bold font-serif mb-6 text-center">Персонажи</h2>
+        <h2 className="text-3xl font-bold font-display mb-6 text-center">Персонажи</h2>
         <Card className="rounded-2xl border-2 shadow-sm">
           <CardContent className="p-12">
             <div className="text-center text-muted-foreground">
@@ -104,7 +114,7 @@ function HomeSection() {
 function CharactersSection() {
   return (
     <div className="max-w-4xl mx-auto">
-      <h2 className="text-4xl font-bold font-serif mb-8 text-center">Персонажи</h2>
+      <h2 className="text-4xl font-bold font-display mb-8 text-center">Персонажи</h2>
       <Card className="rounded-2xl border-2 shadow-sm">
         <CardContent className="p-16">
           <div className="text-center text-muted-foreground space-y-4">
@@ -121,7 +131,7 @@ function CharactersSection() {
 function SettingSection() {
   return (
     <div className="max-w-4xl mx-auto">
-      <h2 className="text-4xl font-bold font-serif mb-8 text-center">Сеттинг</h2>
+      <h2 className="text-4xl font-bold font-display mb-8 text-center">Сеттинг</h2>
       <Card className="rounded-2xl border-2 shadow-sm hover:shadow-lg transition-all">
         <CardContent className="p-8">
           <div className="flex items-start gap-4">
