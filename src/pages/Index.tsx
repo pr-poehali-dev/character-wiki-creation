@@ -8,9 +8,9 @@ export default function Index() {
   const [activeSection, setActiveSection] = useState<Section>('home');
 
   const navItems = [
-    { id: 'home' as Section, label: 'Главная', icon: 'Home' },
-    { id: 'characters' as Section, label: 'Персонажи', icon: 'Users' },
-    { id: 'setting' as Section, label: 'Сеттинг', icon: 'Globe' },
+    { id: 'home' as Section, label: 'Главная', icon: 'Home', link: null },
+    { id: 'characters' as Section, label: 'Персонажи', icon: 'Users', link: '/characters' },
+    { id: 'setting' as Section, label: 'Сеттинг', icon: 'Globe', link: '/setting' },
   ];
 
   return (
@@ -24,20 +24,31 @@ export default function Index() {
               <Icon name="Sun" size={28} className="text-primary" />
             </div>
             <div className="flex gap-1">
-              {navItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => setActiveSection(item.id)}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-2xl transition-all duration-300 ${
-                    activeSection === item.id
-                      ? 'bg-primary text-primary-foreground shadow-lg'
-                      : 'hover:bg-secondary text-foreground'
-                  }`}
-                >
-                  <Icon name={item.icon} size={18} />
-                  <span className="font-medium">{item.label}</span>
-                </button>
-              ))}
+              {navItems.map((item) => 
+                item.link ? (
+                  <a
+                    key={item.id}
+                    href={item.link}
+                    className="flex items-center gap-2 px-4 py-2 rounded-2xl transition-all duration-300 hover:bg-secondary text-foreground"
+                  >
+                    <Icon name={item.icon} size={18} />
+                    <span className="font-medium">{item.label}</span>
+                  </a>
+                ) : (
+                  <button
+                    key={item.id}
+                    onClick={() => setActiveSection(item.id)}
+                    className={`flex items-center gap-2 px-4 py-2 rounded-2xl transition-all duration-300 ${
+                      activeSection === item.id
+                        ? 'bg-primary text-primary-foreground shadow-lg'
+                        : 'hover:bg-secondary text-foreground'
+                    }`}
+                  >
+                    <Icon name={item.icon} size={18} />
+                    <span className="font-medium">{item.label}</span>
+                  </button>
+                )
+              )}
             </div>
           </div>
         </div>
