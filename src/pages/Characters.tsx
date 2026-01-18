@@ -7,7 +7,7 @@ const characters = [
     id: 1,
     name: 'Лила Невес',
     color: 'orange',
-    image: 'https://cdn.poehali.dev/files/IMG_20260118_121008_941.jpg',
+    image: 'https://cdn.poehali.dev/files/IMG_20260118_121008_941%20(1).jpg',
     icon: 'https://cdn.poehali.dev/files/Без%20названия1909_20250730204030.png',
     pages: [
       {
@@ -62,7 +62,7 @@ const characters = [
     id: 2,
     name: 'Лана Солис',
     color: 'purple',
-    image: 'https://cdn.poehali.dev/files/Без%20названия2188.png',
+    image: 'https://cdn.poehali.dev/files/Без%20названия2188%20(1).png',
     icon: 'https://cdn.poehali.dev/files/Без%20названия2265_20251217193536.png',
     pages: [
       {

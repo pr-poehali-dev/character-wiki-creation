@@ -132,14 +132,77 @@ function HomeSection() {
 
 function CharactersSection() {
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-6xl mx-auto space-y-12">
       <h2 className="text-4xl font-bold font-display mb-8 text-center">Персонажи</h2>
-      <Card className="rounded-2xl border-2 shadow-sm">
-        <CardContent className="p-16">
-          <div className="text-center text-muted-foreground space-y-4">
-            <Icon name="BookOpen" size={56} className="mx-auto opacity-30" />
-            <p className="text-xl">Раздел в разработке</p>
-            <p className="text-base">Здесь будут отображаться карточки всех персонажей</p>
+      
+      <Card className="rounded-3xl border-2 border-orange-200 bg-orange-50 shadow-lg hover:shadow-xl transition-all overflow-hidden">
+        <CardContent className="p-0">
+          <div className="flex flex-col md:flex-row items-stretch">
+            <div className="md:w-1/3 relative overflow-hidden">
+              <img
+                src="https://cdn.poehali.dev/files/IMG_20260118_121008_941%20(1).jpg"
+                alt="Лила Невес"
+                className="w-full h-full object-cover min-h-[300px] md:min-h-[400px]"
+              />
+            </div>
+            <div className="md:w-2/3 p-8">
+              <div className="space-y-3">
+                <h3 className="text-3xl font-bold font-display text-orange-900">Лила Невес</h3>
+                <p className="text-lg opacity-90">23 года, рост: 175 см</p>
+                <p className="text-lg opacity-90">День рождения: 01.06</p>
+                <p className="text-lg leading-relaxed mt-4">
+                  Лила Невес – жизнерадостная и активная девушка! Работает спасателем на пляже, часто заводит новых друзей.
+                </p>
+                <div className="pt-4">
+                  <p className="text-lg font-semibold mb-2">Любит:</p>
+                  <p className="text-base leading-relaxed opacity-90">
+                    арбузы, фруктовый лёд, животных (особенно мартышек и собак), заводить новых друзей, проводить время с Ланой, Чайкой и братиком.
+                  </p>
+                </div>
+                <div className="pt-2">
+                  <p className="text-lg font-semibold mb-2">Не любит:</p>
+                  <p className="text-base leading-relaxed opacity-90">
+                    Виктора… И ещё когда братика обижают.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card className="rounded-3xl border-2 border-purple-200 bg-purple-50 shadow-lg hover:shadow-xl transition-all overflow-hidden">
+        <CardContent className="p-0">
+          <div className="flex flex-col md:flex-row items-stretch">
+            <div className="md:w-1/3 relative overflow-hidden">
+              <img
+                src="https://cdn.poehali.dev/files/Без%20названия2188%20(1).png"
+                alt="Лана Солис"
+                className="w-full h-full object-cover min-h-[300px] md:min-h-[400px]"
+              />
+            </div>
+            <div className="md:w-2/3 p-8">
+              <div className="space-y-3">
+                <h3 className="text-3xl font-bold font-display text-purple-900">Лана Солис</h3>
+                <p className="text-lg opacity-90">25 лет, рост: 180 см</p>
+                <p className="text-lg opacity-90">День рождения: 14.02</p>
+                <p className="text-lg leading-relaxed mt-4">
+                  Лана Солис – спокойная, расслабленная и, хоть может показаться равнодушной, искренне добрая девушка. Работает в зале игровых автоматов, предпочитает тихий отдых.
+                </p>
+                <div className="pt-4">
+                  <p className="text-lg font-semibold mb-2">Любит:</p>
+                  <p className="text-base leading-relaxed opacity-90">
+                    шоппинг, дорогую одежду, проводить время с Лилой, Чайкой и Кэпом, необычную еду, алкогольные коктейли, братика Кайла.
+                  </p>
+                </div>
+                <div className="pt-2">
+                  <p className="text-lg font-semibold mb-2">Не любит:</p>
+                  <p className="text-base leading-relaxed opacity-90">
+                    Виктора, когда Кайл тратит её деньги, бедность.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </CardContent>
       </Card>
