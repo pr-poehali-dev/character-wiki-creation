@@ -64,7 +64,7 @@ function HomeSection() {
               <Icon name="Paperclip" size={24} className="text-primary" />
             </div>
             <div className="flex-1">
-              <p className="text-lg leading-relaxed text-foreground">
+              <p className="text-lg leading-relaxed text-foreground text-center">
                 Этот сайт посвящён маскотам, а так же сеттинговым персонажам телеграмм-аска @edlask. 
                 Здесь представлена краткая информация, некоторые детали изложены кратко. 
                 Приятного ознакомления!
